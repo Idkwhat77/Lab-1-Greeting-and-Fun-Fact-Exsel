@@ -6,7 +6,9 @@ Hi there! My name is Exsel Octaviand Gosal. My first Project for my OOP (Object 
 
 - JDK (Java Development Kit) Version 23.0.2 
 - Visual Studio Code as my IDE (Integrated Development Environment) because my laptop is a potato and can't handle any other ones.
-- Git as a way to push files to Github without manually uploading everytime.
+- Git as a way to push files to Github
+
+Downloading JDK was easy enough to do, and for Visual Studio Code, I have it installed since the beginning of time so I had no problem with it. I learned how to use Git from my previous semester so I can now effectively push files instead of manually uploading them.
 
 ## Challenges
 
