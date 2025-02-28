@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MyFirstProgram",
+            "request": "launch",
+            "mainClass": "MyFirstProgram",
+            "projectName": "Lab-1-Greeting-and-Fun-Fact-Exsel_67cbfd7d"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
