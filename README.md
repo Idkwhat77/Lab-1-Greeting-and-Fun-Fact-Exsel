@@ -17,4 +17,4 @@ There are many challenges that I faced when working on this assignment, such as 
 - Which fun facts to add, no joke. The hardest part was trying to find which fun facts are "fun" enough to be included. At the end, I just decided on 10 random ones I found off the internet (credits on the .java file)
 - Figuring out what dialogue fits with each personality, especially Fischl's dialogue. I looked through her voicelines and tried to mimic it as best as I can. It's not perfect, but it's good enough.
 - Error Handling when the scanner input's data type isn't correct. I just asked **ChatGPT** for this since I had no idea on how to implement that...
-- Manually copy pasting ANSI color codes. This was fixed by giving each ANSI code a easy to remember variable instead (Thank you Ken for the idea)
+- Manually copy pasting ANSI color codes. This was fixed by giving each ANSI code a easy to remember variable instead (Thank you @KeaneKen for the idea)
