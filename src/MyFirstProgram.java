@@ -2,8 +2,10 @@ import java.util.Scanner; // Import Scanner library for user input purposes like
 
 public class MyFirstProgram { // My first program for my OOP (Object Oriented Programming) Class
     public static void main(String[] args) throws Exception {
+    
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
 
-        // -- Variable defining area :O -- //
+        // ==================== Variable defining area :O ==================== //
 
         /*
          * Fun Fact Credits :
@@ -13,7 +15,7 @@ public class MyFirstProgram { // My first program for my OOP (Object Oriented Pr
          */
 
         // The holy array of fun facts...
-        String[] Fun_facts = {"Minecraft was written in Java?", 
+        String[] Fun_Facts = {"Minecraft was written in Java?", 
         "Java was first named as 'Oak'? It was changed because a company already registered with that name.", 
         "Java was made by an accident from 'cleaning up' C++?", 
         "Java class format starts with 0xCAFEBABE?", 
@@ -28,28 +30,27 @@ public class MyFirstProgram { // My first program for my OOP (Object Oriented Pr
         String Fun_Facts_Colored;
 
         // Bunch of Booleans to check if a personality has greeted you before or not
-        boolean BullySeen = false;
-        boolean ShySeen = false;
-        boolean FischlSeen = false;
-        boolean ShelteredSeen = false;
-        boolean NormalSeen = false;
+        boolean BullySeen = false, ShySeen = false, FischlSeen = false, ShelteredSeen = false, NormalSeen = false;
 
         // Boolean to keep program running, sets to false when user exits
         boolean Running = true;                                                             
 
-        // Variables for the name input and which personality to choose
+        // Variables for the name input personality input
         int Personality;           
         String Name = "Placeholder";                                                         
 
-        // Used later for selecting a random fun fact using array index
-        int index_fact = 0;                                                                  
+        // Used later for generating a random index for the fun facts
+        int Index_Fact = 0;                                                                  
         
-        // Variables for getting Java Version (This is an extra challenge added by my lecturer)
+        // Variables for getting Java Version and coloring it
         String Java_Version = System.getProperty("java.version");         
         String Java_Version_Colored  = "\u001b[33m" + Java_Version + "\u001b[0m";         
 
-        // -- Main Program Area -- //
-        System.out.print("\033[H\033[2J");                                               
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+        // ==================== Main Program Area ==================== //
+
+        System.out.print("\033[H\033[2J"); // Clears console                                               
         Scanner scanner = new Scanner(System.in);
         System.out.print("\u001b[0mGreetings, mortal!\nPlease write thy identity : ");
         Name = scanner.nextLine();
@@ -63,20 +64,18 @@ public class MyFirstProgram { // My first program for my OOP (Object Oriented Pr
             // Detects if the input is an integer or not (Thank you ChatGPT)
             if (scanner.hasNextInt()) {
                 Personality = scanner.nextInt();                                          
-                index_fact = (int) (Math.random() * Fun_facts.length);                    
-                Fun_Facts_Colored = "\u001b[36;1m" + Fun_facts[index_fact] + "\u001b[0m"; 
-
+                Index_Fact = (int) (Math.random() * Fun_Facts.length);                    
+                Fun_Facts_Colored = "\u001b[36;1m" + Fun_Facts[Index_Fact] + "\u001b[0m"; 
             } else {
-                System.out.print("\033[H\033[2J");
+                System.out.print("\033[H\033[2J"); // Clears the console
                 System.out.println("\u001b[31mInvalid input! Please enter a number from 0 to 5.\u001b[0m");
                 scanner.next();                                                           
                 continue; 
             }
 
-            // Clears the console
-            System.out.print("\033[H\033[2J");
+            System.out.print("\033[H\033[2J"); // Clears the console
 
-            // Responses depending on personality input 
+            // ==================== Holy grail of personality responses ==================== //
             switch(Personality) { 
                 case 0:
                     System.out.println("See you in the flipside!\u001b[0m");
